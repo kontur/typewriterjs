@@ -576,10 +576,11 @@ class Typewriter {
         }
 
         if(textNodeToUse) {
+          // "character" can be a html node, too
           if(node) {
-            node.appendChild(textNodeToUse);
+            node.innerHTML += character
           } else {
-            this.state.elements.wrapper.appendChild(textNodeToUse);
+            this.state.elements.wrapper.innerHTML += character
           }
         }
 

@@ -7,6 +7,9 @@ const config = {
     react: resolve('src', 'react'),
   },
 
+  // To get unminified dev output
+  // devtool: "inline-source-map",
+
   output: {
     filename: '[name].js',
     path: resolve('dist'),
